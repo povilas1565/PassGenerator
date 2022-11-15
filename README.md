@@ -1,8 +1,4 @@
-[![npm (scoped)](https://img.shields.io/npm/v/@walletpass/pass-js.svg)](https://www.npmjs.com/package/@walletpass/pass-js) [![codecov](https://codecov.io/gh/walletpass/pass-js/branch/master/graph/badge.svg)](https://codecov.io/gh/walletpass/pass-js)
-[![Known Vulnerabilities](https://snyk.io/test/github/walletpass/pass-js/badge.svg?targetFile=package.json)](https://snyk.io/test/github/walletpass/pass-js?targetFile=package.json) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=walletpass_pass-js&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=walletpass_pass-js) [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) [![install size](https://packagephobia.now.sh/badge?p=@walletpass/pass-js)](https://packagephobia.now.sh/result?p=@walletpass/pass-js)
 
-
-<img src="https://docs-assets.developer.apple.com/published/c104c9bff0/841b02dd-b78c-4cad-8da4-700761d34e14.png" alt="Apple Wallet logo" width="216" height="216" align="left">
 
 # @walletpass/pass-js
 
@@ -215,8 +211,8 @@ pass.auxiliaryFields.setDateTime(
   },
 );
 // main fields also accept Date objects
-pass.relevantDate = new Date(2020, 1, 1, 10, 0);
-template.expirationDate = new Date(2020, 10, 10, 10, 10);
+pass.relevantDate = new Date(2022, 1, 1, 10, 0);
+template.expirationDate = new Date(2023, 10, 10, 10, 10);
 ```
 
 # Localizations
@@ -238,15 +234,8 @@ pass.localization
     SEAT: "SEAT",
     PASSENGER: "PASSENGER",
     FLIGHT: "FLIGHT"
-  })
-  .add("ru", {
-    GATE: "ВЫХОД",
-    DEPART: "ВЫЛЕТ",
-    ARRIVE: "ПРИЛЁТ",
-    SEAT: "МЕСТО",
-    PASSENGER: "ПАССАЖИР",
-    FLIGHT: "РЕЙС"
   });
+
 
 // Images
 
@@ -282,17 +271,4 @@ app.use(async (ctx, next) => {
 # Troubleshooting with Console app
 
 If the pass file generates without errors but you aren't able to open your pass on an iPhone, plug the iPhone into a Mac with macOS 10.14+ and open the 'Console' application. On the left, you can select your iPhone. You will then be able to inspect any errors that occur while adding the pass.
-
-## Stay in touch
-
-* Author - [Konstantin Vyatkin](https://github.com/tinovyatkin)
-* Email - tino [at] vtkn.io
-
-## License
-
-`@walletpass/pass-js` is [MIT licensed](LICENSE).
-
-# Financial Contributors
-
-Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/walletpass/contribute)]
 

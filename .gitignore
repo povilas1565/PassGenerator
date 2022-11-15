@@ -1,0 +1,9 @@
+node_modules
+.dropbox
+*.tgz
+coverage/*
+.DS_Store
+.app.yml
+dist/*
+junit.xml
+.idea
